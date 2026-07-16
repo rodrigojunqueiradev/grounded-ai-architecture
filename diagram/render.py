@@ -36,7 +36,6 @@ def main() -> None:
         browser = p.chromium.launch()
         page = browser.new_page(device_scale_factor=1)
         shoot(page, HERE / "anti-hallucination-architecture.png", 1600, 720, 1600)
-        shoot(page, HERE / "upwork-thumbnail.png", 1000, 750, 940)
         browser.close()
 
 
