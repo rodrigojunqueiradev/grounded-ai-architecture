@@ -18,60 +18,73 @@
   <!-- ===================== Main flow ===================== -->
 
   <!-- Block 1: User Question -->
-  <rect x="80" y="180" width="240" height="140" rx="14" fill="#FFFFFF" stroke="#C7CFDD" stroke-width="1.5"/>
+  <rect x="80" y="180" width="200" height="140" rx="14" fill="#FFFFFF" stroke="#C7CFDD" stroke-width="1.5"/>
   <circle cx="106" cy="206" r="13" fill="#2E6BE6"/>
   <text x="106" y="211" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle">1</text>
-  <text x="200" y="252" font-size="20" font-weight="bold" fill="#1F2A44" text-anchor="middle">User Question</text>
-  <text x="200" y="288" font-size="14" fill="#5A6B8C" text-anchor="middle">Natural language</text>
+  <text x="180" y="252" font-size="20" font-weight="bold" fill="#1F2A44" text-anchor="middle">User Question</text>
+  <text x="180" y="288" font-size="14" fill="#5A6B8C" text-anchor="middle">Natural language</text>
 
   <!-- Arrow 1 -->
-  <line x1="320" y1="250" x2="372" y2="250" stroke="#8593AD" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="280" y1="250" x2="320" y2="250" stroke="#8593AD" stroke-width="2.5" marker-end="url(#arrow)"/>
 
   <!-- Block 2: Intent and Entity Parsing -->
-  <rect x="380" y="180" width="240" height="140" rx="14" fill="#FFFFFF" stroke="#C7CFDD" stroke-width="1.5"/>
-  <circle cx="406" cy="206" r="13" fill="#2E6BE6"/>
-  <text x="406" y="211" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle">2</text>
-  <text x="500" y="244" font-size="20" font-weight="bold" fill="#1F2A44" text-anchor="middle">Intent &amp; Entity</text>
-  <text x="500" y="268" font-size="20" font-weight="bold" fill="#1F2A44" text-anchor="middle">Parsing</text>
-  <text x="500" y="298" font-size="14" fill="#5A6B8C" text-anchor="middle">What is being asked</text>
+  <rect x="328" y="180" width="200" height="140" rx="14" fill="#FFFFFF" stroke="#C7CFDD" stroke-width="1.5"/>
+  <circle cx="354" cy="206" r="13" fill="#2E6BE6"/>
+  <text x="354" y="211" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle">2</text>
+  <text x="428" y="244" font-size="20" font-weight="bold" fill="#1F2A44" text-anchor="middle">Intent &amp; Entity</text>
+  <text x="428" y="268" font-size="20" font-weight="bold" fill="#1F2A44" text-anchor="middle">Parsing</text>
+  <text x="428" y="298" font-size="14" fill="#5A6B8C" text-anchor="middle">What is being asked</text>
 
   <!-- Arrow 2 -->
-  <line x1="620" y1="250" x2="672" y2="250" stroke="#8593AD" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="528" y1="250" x2="568" y2="250" stroke="#8593AD" stroke-width="2.5" marker-end="url(#arrow)"/>
 
   <!-- Block 3: Retrieval Layer -->
-  <rect x="680" y="180" width="240" height="140" rx="14" fill="#FFFFFF" stroke="#C7CFDD" stroke-width="1.5"/>
-  <circle cx="706" cy="206" r="13" fill="#2E6BE6"/>
-  <text x="706" y="211" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle">3</text>
-  <text x="800" y="252" font-size="20" font-weight="bold" fill="#1F2A44" text-anchor="middle">Retrieval Layer</text>
-  <text x="800" y="282" font-size="14" fill="#5A6B8C" text-anchor="middle">SQL / vector search</text>
-  <text x="800" y="300" font-size="14" fill="#5A6B8C" text-anchor="middle">over real data</text>
+  <rect x="576" y="180" width="200" height="140" rx="14" fill="#FFFFFF" stroke="#C7CFDD" stroke-width="1.5"/>
+  <circle cx="602" cy="206" r="13" fill="#2E6BE6"/>
+  <text x="602" y="211" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle">3</text>
+  <text x="676" y="252" font-size="20" font-weight="bold" fill="#1F2A44" text-anchor="middle">Retrieval Layer</text>
+  <text x="676" y="282" font-size="14" fill="#5A6B8C" text-anchor="middle">SQL / vector search</text>
+  <text x="676" y="300" font-size="14" fill="#5A6B8C" text-anchor="middle">over real data</text>
 
   <!-- Arrow 3 -->
-  <line x1="920" y1="250" x2="972" y2="250" stroke="#8593AD" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="776" y1="250" x2="816" y2="250" stroke="#8593AD" stroke-width="2.5" marker-end="url(#arrow)"/>
 
-  <!-- Block 4: Grounding and Validation (accent) -->
-  <rect x="980" y="180" width="240" height="140" rx="14" fill="#EAF1FD" stroke="#2E6BE6" stroke-width="2"/>
-  <circle cx="1006" cy="206" r="13" fill="#2E6BE6"/>
-  <text x="1006" y="211" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle">4</text>
-  <text x="1100" y="244" font-size="20" font-weight="bold" fill="#1F2A44" text-anchor="middle">Grounding &amp;</text>
-  <text x="1100" y="268" font-size="20" font-weight="bold" fill="#1F2A44" text-anchor="middle">Validation</text>
-  <text x="1100" y="298" font-size="14" fill="#5A6B8C" text-anchor="middle">Numbers checked, origin cited</text>
+  <!-- Block 4: LLM Drafts Answer -->
+  <rect x="824" y="180" width="200" height="140" rx="14" fill="#FFFFFF" stroke="#C7CFDD" stroke-width="1.5"/>
+  <circle cx="850" cy="206" r="13" fill="#2E6BE6"/>
+  <text x="850" y="211" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle">4</text>
+  <text x="924" y="244" font-size="20" font-weight="bold" fill="#1F2A44" text-anchor="middle">LLM Drafts</text>
+  <text x="924" y="268" font-size="20" font-weight="bold" fill="#1F2A44" text-anchor="middle">Answer</text>
+  <text x="924" y="292" font-size="14" fill="#5A6B8C" text-anchor="middle">Wording from retrieved</text>
+  <text x="924" y="310" font-size="14" fill="#5A6B8C" text-anchor="middle">records only</text>
 
   <!-- Arrow 4 -->
-  <line x1="1220" y1="250" x2="1272" y2="250" stroke="#8593AD" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="1024" y1="250" x2="1064" y2="250" stroke="#8593AD" stroke-width="2.5" marker-end="url(#arrow)"/>
 
-  <!-- Block 5: Grounded Answer -->
-  <rect x="1280" y="180" width="240" height="140" rx="14" fill="#FFFFFF" stroke="#C7CFDD" stroke-width="1.5"/>
-  <circle cx="1306" cy="206" r="13" fill="#2E6BE6"/>
-  <text x="1306" y="211" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle">5</text>
-  <text x="1400" y="252" font-size="20" font-weight="bold" fill="#1F2A44" text-anchor="middle">Grounded Answer</text>
-  <text x="1400" y="288" font-size="14" fill="#5A6B8C" text-anchor="middle">With source reference</text>
+  <!-- Block 5: Grounding and Validation (accent) -->
+  <rect x="1072" y="180" width="200" height="140" rx="14" fill="#EAF1FD" stroke="#2E6BE6" stroke-width="2"/>
+  <circle cx="1098" cy="206" r="13" fill="#2E6BE6"/>
+  <text x="1098" y="211" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle">5</text>
+  <text x="1172" y="244" font-size="20" font-weight="bold" fill="#1F2A44" text-anchor="middle">Grounding &amp;</text>
+  <text x="1172" y="268" font-size="20" font-weight="bold" fill="#1F2A44" text-anchor="middle">Validation</text>
+  <text x="1172" y="292" font-size="14" fill="#5A6B8C" text-anchor="middle">Numbers checked,</text>
+  <text x="1172" y="310" font-size="14" fill="#5A6B8C" text-anchor="middle">origin cited</text>
+
+  <!-- Arrow 5 -->
+  <line x1="1272" y1="250" x2="1312" y2="250" stroke="#8593AD" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- Block 6: Grounded Answer -->
+  <rect x="1320" y="180" width="200" height="140" rx="14" fill="#FFFFFF" stroke="#C7CFDD" stroke-width="1.5"/>
+  <circle cx="1346" cy="206" r="13" fill="#2E6BE6"/>
+  <text x="1346" y="211" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle">6</text>
+  <text x="1420" y="252" font-size="20" font-weight="bold" fill="#1F2A44" text-anchor="middle">Grounded Answer</text>
+  <text x="1420" y="288" font-size="14" fill="#5A6B8C" text-anchor="middle">With source reference</text>
 
   <!-- ===================== Blocked path ===================== -->
 
   <!-- Path from User Question down and right -->
-  <path d="M 200 320 L 200 530" fill="none" stroke="#AEB8CC" stroke-width="2.5" stroke-dasharray="7 6"/>
-  <line x1="200" y1="530" x2="392" y2="530" stroke="#AEB8CC" stroke-width="2.5" stroke-dasharray="7 6"/>
+  <path d="M 180 320 L 180 530" fill="none" stroke="#AEB8CC" stroke-width="2.5" stroke-dasharray="7 6"/>
+  <line x1="180" y1="530" x2="392" y2="530" stroke="#AEB8CC" stroke-width="2.5" stroke-dasharray="7 6"/>
 
   <!-- Red X blocker -->
   <circle cx="430" cy="530" r="19" fill="#FDEDED" stroke="#D64545" stroke-width="2"/>
