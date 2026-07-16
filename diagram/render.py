@@ -4,7 +4,7 @@ Uses Playwright (Chromium screenshot of an HTML page embedding the SVG),
 because cairosvg needs a native cairo DLL that is not available on Windows.
 
 Outputs:
-- anti-hallucination-architecture.png (1600x800)
+- anti-hallucination-architecture.png (1600x720)
 - upwork-thumbnail.png (1000x750, diagram centered with margin)
 """
 from pathlib import Path
